@@ -1,6 +1,6 @@
 import { EntityRepository, Repository } from 'typeorm';
 
-import IAppointmentsRepository from '@modules/appointments/infra/typeorm/repositories/AppointmentsRepository';
+import IAppointmentsRepository from '@modules/appointments/repositories/IAppointmentsRepository';
 
 import Appointment from '../entities/Appointments';
 
