@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "dev:server": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
+    "dev:server": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules -r tsconfig-paths/register src/shared/infra/http/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
     "doc_start": "docker start gosatck_postgres"
   },
@@ -43,6 +43,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "prettier": "^2.0.5",
     "ts-node-dev": "^1.0.0-pre.49",
+    "tsconfig-paths": "^3.9.0",
     "typescript": "^3.9.5"
   }
 }
